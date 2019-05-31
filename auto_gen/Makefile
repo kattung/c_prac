@@ -13,5 +13,5 @@ clean:
 	sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
 	rm -f $@.$$$$
 
-include $(sources:.c=.d)
+-include $(sources:.c=.d)
 
