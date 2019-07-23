@@ -21,13 +21,17 @@
 
 * print formats
 
-  int                 %d    or  %x
-  unsigned int        %u    or  %x
-  long                %ld   or  %lx
-  unsigned long       %lu   or  %lx
-  long long           %lld  or  %llx
-  unsigned long long  %llu  or  %llx
-  size_t              %zu   or  %zx
-  ssize_t             %zd   or  %zx
+  +--------------------+-----------------+
+  | variable type      | print specifier |
+  +--------------------+-----------------+
+  | int                | %d    or  %x    |
+  | unsigned int       | %u    or  %x    |
+  | long               | %ld   or  %lx   |
+  | unsigned long      | %lu   or  %lx   |
+  | long long          | %lld  or  %llx  |
+  | unsigned long long | %llu  or  %llx  |
+  | size_t             | %zu   or  %zx   |
+  | ssize_t            | %zd   or  %zx   |
+  +--------------------+-----------------+
 
   <linux_source>/Documentation/printk-formats.txt
