@@ -1,0 +1,33 @@
+* Integer sizes on 32 bit and 64 bit Linux
+
+  +------------------+--------+--------+
+  | type/executable  | 32 bit | 64 bit |
+  +------------------+--------+--------+
+  | short int        | 16 bit | 16 bit |
+  | int              | 32 bit | 32 bit |
+  | long int         | 32 bit | 64 bit |
+  | long long int    | 64 bit | 64 bit |
+  | size_t           | 32 bit | 64 bit |
+  | void*            | 32 bit | 64 bit |
+  +------------------+--------+--------+
+
+  Note: A 32 bit executable can be used in a 64 bit user space
+  (supposed a 32 bit loader and required shared libraries have
+  been installed), a 32 bit user space can run on a 64 bit kernel
+  and a 32 bit kernel can run on a 64 bit processor. So it’s really
+  the word length of the executable that counts.
+
+  https://usrmisc.wordpress.com/2012/12/27/integer-sizes-in-c-on-32-bit-and-64-bit-linux/
+
+* print formats
+
+  int                 %d    or  %x
+  unsigned int        %u    or  %x
+  long                %ld   or  %lx
+  unsigned long       %lu   or  %lx
+  long long           %lld  or  %llx
+  unsigned long long  %llu  or  %llx
+  size_t              %zu   or  %zx
+  ssize_t             %zd   or  %zx
+
+  <linux_source>/Documentation/printk-formats.txt
